@@ -1,0 +1,47 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %title Durban From Far: Home
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    = favicon_link_tag 'favicon.ico'
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    %script{:src => "js/vendor/modernizr-2.6.2.min.js"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:300", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", :rel => "stylesheet", :type => "text/css"}/
+  %body{:class => controller.controller_name}
+    %header.toppartss
+      .navbar.navshadow
+        .navbeam
+          %ul
+            %li.percentt
+              %a{:href => root_path}
+                .nav-link-holder
+                  %i.fa.fa-home
+                  Home
+            %li.percentt
+              %a{:href => "songs.html"}
+                .nav-link-holder Songs
+            %li.percentt.needsspace
+              %a{:href => "albums.html"}
+                .nav-link-holder Albums
+              %ul.ulwidth
+                %li.percenttt.submenu.navinnershadow
+                  %a{:href => "ss.html"}
+                    .nav-link-holder Short Stories
+                %li.percenttt.botofsubmenu
+                  %a{:href => "illustrations.html"}
+                    .nav-link-holder Illustrations
+            %li.percentt
+              %a{:href => "about.html"}
+                .nav-link-holder About
+            %li.percentt
+              %a{:href => "contact.html"}
+                .nav-link-holder Contact
+      .bannernologo
+    =yield
+    %span#fontquickload Hey! Hey you! Stop looking at my code!
+    = render "layouts/footer"
+    

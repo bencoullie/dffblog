@@ -1,0 +1,57 @@
+.midpart
+  .titlediv
+    %a{:href => "http://durbanfromfar.bandcamp.com/album/short-stories?from=embed", :title => "Link to Bandcamp"}
+      %h1.boldf Short
+      %h2.thinf Stories
+  %hr
+    .contentarea.clearfix
+      .block
+        = link_to image_tag( 'shortstories.jpg'), songs_path, class: "blurimg1"
+      .block.second
+        %h3.lightf.displayinlineblock DEBUT ALBUM
+        %h4.lightf.displayinlineblock.subblock (2014)
+        %iframe{:height => "439px", :src => "http://bandcamp.com/EmbeddedPlayer/album=732404972/size=large/bgcol=ffffff/linkcol=e9bf92/artwork=none/transparent=true/", :style => "border: 0;", :width => "100%"}
+          %a{:href => "http://durbanfromfar.bandcamp.com/album/short-stories"} Short Stories by Durban From Far
+      %hr.margintop
+        .titlediv.left
+          %h1.boldf About
+          %h2.thinf Album
+        %hr
+          .contentarea.clearfix
+            .block
+              %h4.lightf.margintopten Description
+              %p At just over 28 minutes, this album is not much more than a couple of short stories in musical form.
+              %p I hope you enjoy one or more of them.
+              %p (And please let me know if and why you don't.)
+              %p Much love and Kappa.
+              %h4.lightf.top25 Credits
+              %p
+                %p Ben Coullie (ukulele, guitar, tracking and sampling).
+                %p Chanelle Duley (vocals and lyrics for Blue Sky Days).
+                %p Soundtrack composers in general (for inspiring me every time I watch a movie or play a game).
+                %p
+                  Album art by
+                  = succeed "." do
+                    %a.linkstyle{:href => "https://www.flickr.com/photos/mwichary/"} Marcin Wichary
+            .block.second
+              %h4.lightf.margintopten.tac Free Download
+              .clearfix
+                .block.smaller
+                  %a{:href => "https://docs.google.com/uc?export=download=G59S=0BwwHw_WcYDbZRlBvd2pKeVl6eDg", :title => "Gdrive Downloader: MP3"}
+                    %i.fa.fa-cloud-download
+                  %p.smallertext MP3 (66.9MB)
+                .block.smaller
+                  %a{:href => "https://docs.google.com/uc?export=download=KU0I=0BwwHw_WcYDbZUUxjZGFRTHA0UEE", :title => "Gdrive Downloader: FLAC"}
+                    %i.fa.fa-cloud-download.flac
+                  %p.smallertext FLAC (133.4MB)
+              %h4.lightf.margintoptwenty.tac Free to use  share
+              .block.smaller.margintoptwenty
+                %a{:href => "https://creativecommons.org/licenses/", :target => "_blank", :title => "What is Creative Commons?"}
+                  %object{:data => "img/cc.svg", :height => "100", :width => "100"}
+                %p.tac.padnone.marginleft.smallerem
+                  %a{:href => "https://creativecommons.org/licenses/", :target => "_blank", :title => "What is Creative Commons?"} Creative Commons
+              .block.smaller.margintoptwenty
+                %a{:href => "https://tldrlegal.com/license/creative-commons-attribution-(cc)", :target => "_blank", :title => "CC Attribution - a summary"}
+                  %object{:data => "img/by.svg", :height => "100", :width => "100"}
+                %p.tac.padnone.marginleft.smallerem
+                  %a{:href => "https://tldrlegal.com/license/creative-commons-attribution-(cc)", :target => "_blank", :title => "CC Attribution - a summary"} Attribution

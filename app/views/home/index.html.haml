@@ -1,0 +1,32 @@
+%header.toppart
+  .navbar
+    .navbeam
+      %ul
+        %li.percentt
+          %a{:href => root_path}
+            .nav-link-holder
+              %i.fa.fa-home
+              Home
+        %li.percentt
+          %a{:href => "songs.html"}
+            .nav-link-holder Songs
+        %li.percentt.needsspace
+          %a{:href => "albums.html"}
+            .nav-link-holder Albums
+          %ul.ulwidth
+            %li.percenttt.submenu.navinnershadow
+              %a{:href => "ss.html"}
+                .nav-link-holder Short Stories
+            %li.percenttt.botofsubmenu
+              %a{:href => "illustrations.html"}
+                .nav-link-holder Illustrations
+        %li.percentt
+          %a{:href => "about.html"}
+            .nav-link-holder About
+        %li.percentt
+          %a{:href => "contact.html"}
+            .nav-link-holder Contact
+  .splashtitle
+    %img.logoimg.fadein{:alt => "site logo", :src => "assets/logo.png"}/
+  .banner.forindexcity
+
