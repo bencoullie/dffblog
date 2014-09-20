@@ -3,13 +3,9 @@ development:
   encoding: unicode
   database: dffblog_development
   pool: 5
-  username: ben
-  password:
 
 test:
   adapter: postgresql
   encoding: unicode
   database: dff blog_test
   pool: 5
-  username: ben
-  password:

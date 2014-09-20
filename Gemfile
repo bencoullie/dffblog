@@ -57,3 +57,6 @@ gem 'jquery-turbolinks'
 
 # Enables easy seeding - simply type: rake db:seed:dump
 gem 'seed_dump'
+
+# Setting ruby version
+ruby "2.1.2"
