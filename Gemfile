@@ -50,3 +50,5 @@ gem 'nprogress-rails'
 gem 'jquery-turbolinks'
 
 gem 'tilt', '~> 1.4.1'
+
+gem 'seed_dump'
