@@ -41,14 +41,19 @@ gem 'spring',        group: :development
 #----- HAML -----#
 gem "haml-rails"
 
+# gems for development environment
 group :development do
-  gem "better_errors"
+	# error checking
+  gem 'better_errors'
+  # some heroku requirement
+  gem 'rails_12factor'
 end
 
+# progress bar for turbolinks pages
 gem 'nprogress-rails'
 
+# Enables jquery to function with on_page load events alongside turbolinks
 gem 'jquery-turbolinks'
 
-gem 'tilt', '~> 1.4.1'
-
+# Enables easy seeding - simply type: rake db:seed:dump
 gem 'seed_dump'
