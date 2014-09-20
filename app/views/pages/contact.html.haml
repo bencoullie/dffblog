@@ -1,0 +1,42 @@
+.midpart
+  .titlediv
+    %h1.boldf Contact
+  %hr/
+  .contentarea.clearfix
+    #contactblock.block
+      %h4.bookf.tac.needspaceploxx Just email me!
+      %hr.shorterhr/
+      .emailblock.tac
+        %a{:href => "mailto:bencoullie@gmail.com?subject=Durban From Far: (subject?)", :title => "bencoullie@gmail.com"}
+          %i.fa.fa-envelope.tac
+      %br/
+      %hr/
+    #contactblock.block
+      %h4.bookf.tac.needspaceplox
+        %span.orr &nbspOr,
+        %br/
+        if you're feeling formal
+      %br/
+      %hr/
+      %br/
+      %form.basic-grey{:action => "", :method => "post"}
+        %h1
+          Contact Form
+          %span Please fill all the texts in the fields.
+        %label
+          %span Your Name :
+          %input#name{:name => "name", :placeholder => "Your full name", :type => "text"}/
+        %label
+          %span Your Email :
+          %input#email{:name => "email", :placeholder => "Valid email address", :type => "email"}/
+        %label
+          %span Message :
+          %textarea#message{:name => "message", :placeholder => "Your message to me"}
+        %label
+          %span Subject :
+          %select{:name => "selection"}
+            %option{:value => "Job Inquiry"} General Question ▾
+            %option{:value => "General Question"} Song Inquiry or Request
+            %option{:value => "General Question"} Full Soundtrack Inquiry or Request
+        %label
+          %input.button{:onclick => "myAlert()", :type => "button", :value => "Send"}/
