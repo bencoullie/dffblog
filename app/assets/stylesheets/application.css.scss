@@ -57,6 +57,9 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+  &:focus {
+    outline: none !important;
+  }
 }
 
 a {
@@ -154,7 +157,7 @@ body {
 .comingsoon {
     margin: 26px auto -25px;
     text-align: center;
-    font-family: 'bebas_neuelight';
+    font-family: 'bebas_neuebook';
     font-size: 30px;
     color: white;
     letter-spacing: 5px;
