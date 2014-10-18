@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %title Durban From Far: Home
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    = favicon_link_tag 'favicon.ico'
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    %script{:src => "js/vendor/modernizr-2.6.2.min.js"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:300", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", :rel => "stylesheet", :type => "text/css"}/
+  %body{:class => controller.controller_name}
+    = render "layouts/admin_nav"
+    .container.admin
+      = yield

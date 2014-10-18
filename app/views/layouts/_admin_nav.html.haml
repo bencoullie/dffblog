@@ -1,0 +1,21 @@
+%nav.navbar.navbar-default.navbar-fixed-top{:role => "navigation"}
+  .container
+    .row
+      .col-md-12
+        .navbar-header
+          %a.navbar-brand{:href => admin_url, :rel => "home"}
+            %span
+              Durban
+            %span
+              From Far
+          %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+        .collapse.navbar-collapse.pull-right
+          %ul.nav.navbar-nav
+            %li
+              %a{:href => admin_posts_url} Users
+            %li
+              %a{:href => admin_users_url} Posts

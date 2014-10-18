@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :posts
+
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -68,5 +70,13 @@ Rails.application.routes.draw do
   get '/ss' => 'pages#ss'
   get '/about' => 'pages#about'
   get '/contact' => 'pages#contact'
+  
+  #----- ADMIN CONTROLLER -----#
+
+  get '/admin', to: 'admin#index'
+
+  namespace :admin do
+    resources :users, :posts
+  end
   
 end
